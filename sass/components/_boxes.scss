@@ -1,0 +1,26 @@
+.boxes {
+  font-size: 0;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    position: relative;
+  }
+  &__title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 27px 0;
+
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    color: $bg-color-main;
+    background: rgba(47, 48, 58, 0.8);
+  }
+}

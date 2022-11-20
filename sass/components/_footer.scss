@@ -1,0 +1,27 @@
+.footer {
+  padding: 60px 0;
+
+  background-color: $bg-color-footer;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  &__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  &__logo span {
+    color: $bg-color-main;
+  }
+
+  &__social-header {
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $bg-color-main;
+  }
+}

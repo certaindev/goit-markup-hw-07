@@ -1,0 +1,27 @@
+.clients {
+  display: flex;
+  justify-content: space-between;
+
+  &__link {
+    padding: 15px 31px;
+    border: 1px solid $color-icon;
+    border-radius: 4px;
+
+    font-size: 0;
+
+    transition: border-color $transition-main-delay $transition-main-function;
+  }
+  &__link:hover,
+  &__link:focus {
+    border-color: $bg-color-accent;
+  }
+  &__icon {
+    fill: $color-icon;
+
+    transition: fill $transition-main-delay $transition-main-function;
+  }
+  &__link:hover > &__icon,
+  &__link:focus > &__icon {
+    fill: $bg-color-accent;
+  }
+}

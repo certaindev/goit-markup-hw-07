@@ -1,0 +1,33 @@
+.feature {
+  padding-bottom: 0;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    width: 270px;
+  }
+  &__block {
+    width: 100%;
+    padding: 25px 0;
+    margin-bottom: 30px;
+    border-radius: 4px;
+
+    text-align: center;
+    background-color: $bg-color-secondary;
+  }
+  &__title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $color-headers;
+  }
+  &__desc {
+    line-height: 1.71;
+  }
+}

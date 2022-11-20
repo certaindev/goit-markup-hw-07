@@ -1,0 +1,35 @@
+.team {
+  background-color: $bg-color-secondary;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 0;
+  }
+  &__item {
+    border-radius: 0px 0px 4px 4px;
+    background-color: $bg-color-main;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  &__block {
+    max-width: 270px;
+    padding: 30px 5px;
+  }
+  &__title {
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    color: $color-headers;
+  }
+  &__title,
+  &__desc {
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+  &__desc {
+    margin-bottom: 16px;
+  }
+}

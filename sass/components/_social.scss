@@ -1,0 +1,39 @@
+.social {
+  display: flex;
+  justify-content: center;
+
+  &__link {
+    padding: 12px;
+    margin-right: 10px;
+    border-radius: 50%;
+
+    font-size: 0;
+
+    transition: background-color $transition-main-delay $transition-main-function;
+  }
+  &__link:last-child {
+    margin-right: 0;
+  }
+  &__link:hover,
+  &__link:focus {
+    background-color: $bg-color-accent;
+  }
+  &__icon {
+    fill: $color-icon;
+
+    transition: fill $transition-main-delay $transition-main-function;
+  }
+  &__link:hover > &__icon,
+  &__link:focus > &__icon {
+    fill: $bg-color-main;
+  }
+  .footer__social &__link {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .footer__social &__link:hover {
+    background-color: $bg-color-accent;
+  }
+  .footer__social &__icon {
+    fill: $bg-color-main;
+  }
+}
